@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /* Represents a Netflix Original show */
 
 /* UML CLASS DIAGRAM:
@@ -26,6 +28,7 @@ public class NetflixOriginal
 {
   /***** CONSTANTS and OTHER STATIC VARIABLES *****/
   public static final String[] VALID_GENRES = {"drama","comedy", "horror","action", "science fiction","anime", "reality","unknown"};
+  public static final String VALID_GENRES_STRING = Arrays.toString(VALID_GENRES);
 
   /***** INSTANCE VARIABLES *****/
   private String name;
