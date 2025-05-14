@@ -8,9 +8,19 @@ public class Main
 	{
 		Scanner keyboard = new Scanner(System.in);
 		// instantiate scanner
-		NetflixOriginal test = Main.instantiateFromInput(keyboard);
+		NetflixOriginal[] userShows = new NetflixOriginal[2];
 
+		for(int i = 0; i < userShows.length; i++) {
+			System.out.println("Entering Netflix Original Show Detail #" + (i+1));
+			userShows[i] = Main.instantiateFromInput(keyboard);
+			
+			System.out.println("Successfully added show: " + userShows[i]);
+		}
+
+		/* 
+		NetflixOriginal test = Main.instantiateFromInput(keyboard);
 		System.out.println("TEST show = " + test);
+		*/
 
 		// close scanner
 		keyboard.close();
